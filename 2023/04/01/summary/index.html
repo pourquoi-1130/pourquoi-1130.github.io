@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/0409.png">
-  <link rel="icon" href="/img/0409.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/project/img/0409.png">
+  <link rel="icon" href="/project/img/0409.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -19,19 +19,21 @@
     <meta name="description" content="本文是针对开源软件课程的第四次作业——部署一个静态网页博客的总结报告，主要记录了搭建此博客的心路历程、遇到的问题及解决方案。 博客主题及其选取原因我选取的是基于Hexo下的主题Fluid（主题链接）。看到这个主题名字的第一反应是“液体、流体”，起初想不明白为什么要用这个词作为主题的名称，随后瞥到了tag中的”#elegent”才恍然大悟，记起“Fluid”还有“流畅优美”的含义。 正如它的名字所言">
 <meta property="og:type" content="article">
 <meta property="og:title" content="个人博客搭建的总结与反思">
-<meta property="og:url" content="http://example.com/2023/04/01/summary/index.html">
+<meta property="og:url" content="https://pourquoi-1130.github.io/project/2023/04/01/summary/index.html">
 <meta property="og:site_name" content="pourquoi&#39;s blog">
 <meta property="og:description" content="本文是针对开源软件课程的第四次作业——部署一个静态网页博客的总结报告，主要记录了搭建此博客的心路历程、遇到的问题及解决方案。 博客主题及其选取原因我选取的是基于Hexo下的主题Fluid（主题链接）。看到这个主题名字的第一反应是“液体、流体”，起初想不明白为什么要用这个词作为主题的名称，随后瞥到了tag中的”#elegent”才恍然大悟，记起“Fluid”还有“流畅优美”的含义。 正如它的名字所言">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/img/0409.png">
+<meta property="og:image" content="https://pourquoi-1130.github.io/project/img/hexo.png">
 <meta property="article:published_time" content="2023-04-01T13:07:13.000Z">
-<meta property="article:modified_time" content="2023-04-02T23:34:24.214Z">
+<meta property="article:modified_time" content="2023-04-03T02:07:48.259Z">
 <meta property="article:author" content="pourquoi">
 <meta property="article:tag" content="open source">
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/0409.png">
+<meta name="twitter:image" content="https://pourquoi-1130.github.io/project/img/hexo.png">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>个人博客搭建的总结与反思 - pourquoi&#39;s blog</title>
@@ -58,12 +60,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="/project/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/project/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/project/css/highlight-dark.css" />
   
 
 
@@ -72,15 +74,15 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"pourquoi-1130.github.io","root":"/project/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/project/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="/project/js/utils.js" ></script>
+  <script  src="/project/js/color-schema.js" ></script>
   
 
 
@@ -97,7 +99,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/project/">
       <strong>pourquoi&#39;s blog</strong>
     </a>
 
@@ -116,7 +118,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="/project/">
                 <i class="iconfont icon-home-fill"></i>
                 <span>Home</span>
               </a>
@@ -128,7 +130,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/">
+              <a class="nav-link" href="/project/archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>Archives</span>
               </a>
@@ -140,7 +142,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/">
+              <a class="nav-link" href="/project/categories/">
                 <i class="iconfont icon-category-fill"></i>
                 <span>Categories</span>
               </a>
@@ -152,7 +154,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/">
+              <a class="nav-link" href="/project/tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>Tags</span>
               </a>
@@ -164,7 +166,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
+              <a class="nav-link" href="/project/about/">
                 <i class="iconfont icon-user-fill"></i>
                 <span>About</span>
               </a>
@@ -194,7 +196,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/project/img/merry.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -349,7 +351,7 @@
 <h3 id="部署安装"><a href="#部署安装" class="headerlink" title="部署安装"></a>部署安装</h3><p>1、安装并配置Node.js</p>
 <p>全局安装最常用的express模块进行测试命令如下:</p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> express -g<br></code></pre></td></tr></table></figure>
-<p>报错图片：<br><img src="/img/1.png" srcset="/img/loading.gif" lazyload></p>
+<p>报错图片：<br><img src="/project/img/1.png" srcset="/project/img/loading.gif" lazyload></p>
 <p>解决方法：</p>
 <ul>
 <li><p>需要删除 npmrc 文件</p>
@@ -368,12 +370,12 @@
 
 <p>解决方法：</p>
 <ul>
-<li>设置-&gt;隐私和安全性-&gt;开发者选项-&gt;允许本地PowerShell脚本在为签名的情况下运行<br><img src="/img/2.png" srcset="/img/loading.gif" lazyload></li>
+<li>设置-&gt;隐私和安全性-&gt;开发者选项-&gt;允许本地PowerShell脚本在为签名的情况下运行<br><img src="/project/img/2.png" srcset="/project/img/loading.gif" lazyload></li>
 </ul>
-<p>3、Hexo与Node.js版本不适配<br>由于淘宝源下install的Hexo版本最高为6.0，与之适配的最高Node.js版本为18.5.0，而之前安装的Node.js版本为18.15.0<br>问题描述：<br>Node.js 版本限制<br><img src="/img/3.png" srcset="/img/loading.gif" lazyload></p>
+<p>3、Hexo与Node.js版本不适配<br>由于淘宝源下install的Hexo版本最高为6.0，与之适配的最高Node.js版本为18.5.0，而之前安装的Node.js版本为18.15.0<br>问题描述：<br>Node.js 版本限制<br><img src="/project/img/3.png" srcset="/project/img/loading.gif" lazyload></p>
 <p>解决方法：</p>
 <ul>
-<li>下载安装nvm命令行工具，用于管理和切换到不同版本的Node.js<br><img src="/img/4.png" srcset="/img/loading.gif" lazyload></li>
+<li>下载安装nvm命令行工具，用于管理和切换到不同版本的Node.js<br><img src="/project/img/4.png" srcset="/project/img/loading.gif" lazyload></li>
 </ul>
 <h3 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h3><p>1、安装 Hexo 完成后，执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件</p>
 <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crystal"><span class="hljs-variable">$ </span>hexo init <br></code></pre></td></tr></table></figure>
@@ -382,7 +384,7 @@
 
 <p>报错图片及解决方法：</p>
 <ul>
-<li>设置git bash走代理<br><img src="/img/5.png" srcset="/img/loading.gif" lazyload></li>
+<li>设置git bash走代理<br><img src="/project/img/5.png" srcset="/project/img/loading.gif" lazyload></li>
 </ul>
 <p>2、Hexo博客出现“Cannot GET&#x2F;”错误<br>问题描述：<br>在Hexo博客中，出现Cannot GET&#x2F;xxx错误便意味着xxx文件未被找到，Cannot GET&#x2F;xxx错误本质是hexo server返回的一个404错误</p>
 <figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs armasm"><span class="hljs-symbol">Cannot</span> <span class="hljs-meta">GET</span>/<br></code></pre></td></tr></table></figure>
@@ -413,7 +415,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/tutorial/" class="category-chain-item">tutorial</a>
+  <a href="/project/categories/tutorial/" class="category-chain-item">tutorial</a>
   
   
 
@@ -428,9 +430,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/open-source/">#open source</a>
+        <a href="/project/tags/open-source/">#open source</a>
       
-        <a href="/tags/blog/">#blog</a>
+        <a href="/project/tags/blog/">#blog</a>
       
     </div>
   
@@ -443,7 +445,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>个人博客搭建的总结与反思</div>
-      <div>http://example.com/2023/04/01/summary/</div>
+      <div>https://pourquoi-1130.github.io/project/2023/04/01/summary/</div>
     </div>
     <div class="license-meta">
       
@@ -487,7 +489,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/04/02/hello-world/" title="Hello World">
+                      <a href="/project/2023/04/02/hello-world/" title="Hello World">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">Hello World</span>
                         <span class="visible-mobile">Previous</span>
@@ -503,6 +505,15 @@
             </div>
 
             
+  
+  
+    <article id="comments" lazyload>
+      
+
+    </article>
+  
+
+
           </article>
         </div>
       </div>
@@ -599,6 +610,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        Views: 
+        <span id="busuanzi_value_site_pv"></span>
+        
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        Visitors: 
+        <span id="busuanzi_value_site_uv"></span>
+        
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -621,8 +656,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="/project/js/events.js" ></script>
+<script  src="/project/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -644,7 +679,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="/project/js/img-lazyload.js" ></script>
   
 
 
@@ -743,7 +778,9 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="/project/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
@@ -751,7 +788,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="/project/js/boot.js" ></script>
 
 
   
